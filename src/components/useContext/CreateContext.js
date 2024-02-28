@@ -74,7 +74,7 @@ export const UserContextProvider = (props) => {
         { imagePath: vcams3 },
         { imagePath: vcams4 },
       ],
-      link:''
+      link:'https://inventory.vcams.in/'
     },
     {
       id: 4,

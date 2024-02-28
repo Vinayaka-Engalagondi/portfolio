@@ -179,7 +179,7 @@ function Projects() {
                     }}
                   >
                     <a
-                      href={}
+                      href={listings.link}
                       style={{ textDecoration: "none" }}
                     >
                       {listings.title}
