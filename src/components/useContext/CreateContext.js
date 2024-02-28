@@ -37,7 +37,7 @@ export const UserContextProvider = (props) => {
         { imagePath: cheffy3 },
         { imagePath: cheffy4 },
       ],
-      link:'https://cheffyhub.com/'
+      link: "https://cheffyhub.com",
     },
     {
       id: 2,
@@ -56,7 +56,7 @@ export const UserContextProvider = (props) => {
         { imagePath: prop4 },
         { imagePath: prop5 },
       ],
-      link:'https://propertybricks.co.in/'
+      link: "https://propertybricks.co.in",
     },
     {
       id: 3,
@@ -74,7 +74,7 @@ export const UserContextProvider = (props) => {
         { imagePath: vcams3 },
         { imagePath: vcams4 },
       ],
-      link:''
+      link: "https://inventory.vcams.in",
     },
     {
       id: 4,
@@ -94,12 +94,11 @@ export const UserContextProvider = (props) => {
       ],
     },
   ];
-    const [bgColor, setBgcolor] = useState();
+  const [bgColor, setBgcolor] = useState();
 
   return (
-    <userContext.Provider value={{ bgColor, setBgcolor,sliderContents }}>
-    {props.children}
-  </userContext.Provider>
-);
-
+    <userContext.Provider value={{ bgColor, setBgcolor, sliderContents }}>
+      {props.children}
+    </userContext.Provider>
+  );
 };

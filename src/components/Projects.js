@@ -117,18 +117,23 @@ function Projects() {
 
                       <Slider ref={sliderRefs[index]} {...settings1}>
                         {listings.images.map((image, idx) => (
-                          <div key={idx}>
-                            <Card sx={{ borderRadius: "10px" }}>
-                              <Box
-                                component="img"
-                                src={image.imagePath}
-                                style={{
-                                  width: "100%  ",
-                                  height: "195px",
-                                }}
-                              ></Box>
-                            </Card>
-                          </div>
+                          <a
+                            href={listings.link}
+                            style={{ textDecoration: "none" }}
+                          >
+                            <div key={idx}>
+                              <Card sx={{ borderRadius: "10px" }}>
+                                <Box
+                                  component="img"
+                                  src={image.imagePath}
+                                  style={{
+                                    width: "100%  ",
+                                    height: "195px",
+                                  }}
+                                ></Box>
+                              </Card>
+                            </div>
+                          </a>
                         ))}
                       </Slider>
 
@@ -178,10 +183,7 @@ function Projects() {
                       lineHeight: "normal",
                     }}
                   >
-                    <a
-                      href={}
-                      style={{ textDecoration: "none" }}
-                    >
+                    <a href={listings.link} style={{ textDecoration: "none" }}>
                       {listings.title}
                     </a>
                   </Box>
